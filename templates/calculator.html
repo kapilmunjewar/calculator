@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container my-4" style="max-width: 770px;">
+        <div class="jumbotron">
+            <h3 class="display-4">Do Calculations!!</h3>
+            <p class="lead">This is a simple application to solve your problem. </p>
+            <hr class="my-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@Input</span>
+                </div>
+                <input type="text" id="inputString" class="form-control" placeholder="Input" aria-label="Username" aria-describedby="basic-addon1" readonly>
+            </div>
+            <div class="setDivCenter">
+                <div>
+                    <button type="button" onclick="addInput('7')" class="btn btn-outline-dark">7</button>
+                    <button type="button" onclick="addInput('8')" class="btn btn-outline-dark">8</button>
+                    <button type="button" onclick="addInput('9')" class="btn btn-outline-dark">9</button>
+                    <button type="button" onclick="addOperation('*')" class="btn btn-outline-dark">*</button>
+                </div>
+                <div>
+                    <button type="button" onclick="addInput('4')" class="btn btn-outline-dark">4</button>
+                    <button type="button" onclick="addInput('5')" class="btn btn-outline-dark">5</button>
+                    <button type="button" onclick="addInput('6')" class="btn btn-outline-dark">6</button>
+                    <button type="button" onclick="addOperation('/')" class="btn btn-outline-dark">/</button>
+                </div>
+                <div>
+                    <button type="button" onclick="addInput('1')" class="btn btn-outline-dark">1</button>
+                    <button type="button" onclick="addInput('2')" class="btn btn-outline-dark">2</button>
+                    <button type="button" onclick="addInput('3')" class="btn btn-outline-dark">3</button>
+                    <button type="button" onclick="addOperation('+')" class="btn btn-outline-dark">+</button>
+                </div>
+                <div>
+                    <button type="button" onclick="addDot('.')" class="btn btn-outline-dark">.&nbsp;</button>
+                    <button type="button" onclick="addInput('0')" class="btn btn-outline-dark">0</button>
+                    <button type="button" onclick="clearInput()" class="btn btn-outline-dark">c</button>
+                    <button type="button" onclick="addOperation('-')" class="btn btn-outline-dark">-</button>
+                </div>
+                <div class="setDivCenter">
+                    <button type="button" href="/" onclick="checkInput()" class="btn btn-outline-dark">Result</button>
+                </div>
+            </div>
+            <div class="input-group mb-3 my-4">
+              <input type="text" class="form-control" id="resultString" placeholder="Output" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@Output</span>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

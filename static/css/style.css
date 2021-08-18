@@ -1,0 +1,10 @@
+button {
+  border: none !important;
+  margin: 8px !important;
+  padding: 4px 14px !important;
+}
+
+.setDivCenter {
+  margin: auto;
+  width: fit-content;
+}
